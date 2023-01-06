@@ -1,8 +1,9 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Helvetica', serif; 
+
 }
 body{
-font-family: 'Amiri Quran', serif; 
  background-image: url('Production-Id-4210523\ \(1\).gif');
  background-size: cover;
  height: 100vh;
@@ -17,11 +18,8 @@ body::-webkit-scrollbar{
 section {
      padding: 2rem;
 }  
-header{
-    font-family: 'Amiri Quran', serif;    
-}
+
 .box {
-font-family: 'Amiri Quran', serif;    
 position:absolute;   
 text-align: center;
 width: 100%
@@ -111,25 +109,18 @@ color: white;
     color: var(--primary);
     text-align: center;
 }
-#eduHead {
-    font-size: 2.5rem;
-    font-weight: 1000;
+.SectionHeaders {
+    font-size: 1.8rem;
+    font-weight: 800;
     margin-bottom: 76px;
+    color: white;
 }
 .steps {
     position: relative;
     margin-top: 32px;
 
 }
-.steps::after {
-    content: "";
-    position: absolute;
-    width: 3px;
-    background-color: var(--primary);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-}
+
 .steps .content p {
     color: var(--primary);
     font-size: 0.8rem;
@@ -155,7 +146,7 @@ color: white;
 }
 .steps .steps-container .university {
     font-weight: 1000;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     color:var(--primary-gradienty);
     margin-bottom: 10px;
     width: 62px;
@@ -175,9 +166,7 @@ color: white;
     flex-shrink: 0;
 }
 @media (max-width: 767px) {
-    .steps::after {
-      left: 32px;
-  }
+
     .steps-container {
       left: 0;
       flex-direction: row-reverse;
@@ -188,12 +177,16 @@ color: white;
       left: 0;
   }
 }
+@media (max-width: 415px) {
+
+    .steps-container {
+      width: 110%;
+  }
+}
 
 /* Projects section */
 #Projects{
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
     padding-top: 40%;
 }
 #projectsection{
@@ -219,27 +212,123 @@ color: white;
 .embed-responsive{
     height: 80%;
 }
-@media (max-width: 850px) {
+@media(max-width: 1351px){
     #projectsection{
-        height: 400px;
+        height: 600px;
     }
     #title{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     #description{
+        font-size: 0.9rem;
+    }
+    #codelink{
         font-size: 0.7rem;
+    }
+    .embed-responsive{
+        height: 75%;
+    } 
+}
+@media(max-width: 1165px){
+    #projectsection{
+        height: 500px;
+    }
+    #title{
+        font-size: 0.9rem;
+    }
+    #description{
+        font-size: 0.8rem;
     }
     #codelink{
         font-size: 0.6rem;
     }
     .embed-responsive{
         height: 65%;
+    } 
+}
+@media (max-width: 900px) {
+    #projectsection{
+        height: 400px;
+    }
+    #title{
+        font-size: 0.7rem;
+    }
+    #description{
+        font-size: 0.7rem;
+    }
+    #codelink{
+        font-size: 0.5rem;
+    }
+    .embed-responsive{
+        height: 60%;
+    }
+}
+@media (max-width: 720px) {
+    #projectsection{
+        height: 350px;
+    }
+    #title{
+        font-size: 0.6rem;
+    }
+    #description{
+        font-size: 0.6rem;
+    }
+    #codelink{
+        font-size: 0.4rem;
+    }
+    .embed-responsive{
+        height: 55%;
     }
 }
 @media (max-width: 550px) {
-
+    #projectsection{
+        height: 325px;
+    }
+    #title{
+        font-size: 0.58rem;
+    }
+    #description{
+        font-size: 0.57rem;
+    }
+    #codelink{
+        font-size: 0.39rem;
+    }
     .embed-responsive{
-        height: 45%;
+        height: 42%;
+    }
+}
+@media (max-width: 480px) {
+    #projectsection{
+        height: 315px;
+    }
+    #title{
+        font-size: 0.53rem;
+    }
+    #description{
+        font-size: 0.54rem;
+    }
+    #codelink{
+        font-size: 0.36rem;
+    }
+    .embed-responsive{
+        height: 40%;
+    }
+}
+@media (max-width: 400px) {
+    #projectsection{
+        height: 300px;
+    }
+    #title{
+        font-size: 0.50rem;
+    }
+    #description{
+        font-size: 0.50rem;
+    }
+    #codelink{
+        font-size: 0.30rem;
+    }
+    .embed-responsive{
+        height: 38%;
     }
 }
 /* Skills section */
@@ -323,6 +412,9 @@ h1{
     margin-bottom: 10%;
 }
 
+.imageclass{
+    border-radius: 10%;
+}
 .newrow {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -355,7 +447,8 @@ h1{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #81dbf8;
+    background-color: #ade5f8;
+    border-radius: 10%;
   }
   
   .containerclass:hover .overlay {
