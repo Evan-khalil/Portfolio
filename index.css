@@ -1,0 +1,408 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'Amiri Quran', serif; 
+ background-image: url('Production-Id-4210523\ \(1\).gif');
+ background-size: cover;
+ height: 100vh;
+ padding:0;
+ margin:0;
+ background-position: center center;
+ background-attachment: fixed;
+} 
+body::-webkit-scrollbar{
+    display: none;
+  } 
+section {
+     padding: 2rem;
+}  
+header{
+    font-family: 'Amiri Quran', serif;    
+}
+.box {
+font-family: 'Amiri Quran', serif;    
+position:absolute;   
+text-align: center;
+width: 100%
+}
+#nextandprev{
+     animation-name: pulse;
+     animation-duration: 5.5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-out;    
+}
+@keyframes pulse {
+     0%{scale: 0.2;}
+     50%{scale: 0.8;}
+     100%{scale: 0.2;}         
+}
+#Home{
+ padding-top: 18%;
+}
+
+/* Header section */
+.dropdown-divider{
+    background-color: black;
+    color: black;
+}
+.dropdown-menu{
+    background-color: black;
+    text-align: center;
+    font-size:1em;
+}
+.cusSticky {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 999;
+}       
+.bg-dark{
+background-image: linear-gradient(19deg, black 0%, black 100%);   
+text-align: center;
+font-size:1em;
+}
+#logo{
+padding-left: 1rem;
+}
+
+/* About section */
+#about{
+    padding: 10%;
+}
+.about-wrapper{
+      height:fit-content;
+}
+.about-left{
+      display: flex;
+      flex-direction: column;
+      padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+.about-img img{
+      width: 274px;
+}
+.about-img{
+      height: 200px;
+      overflow: hidden;
+      border-radius: 90%;
+}
+
+#myname{
+      font-size: 1rem;
+      margin: rem 0 2.5rem 0;
+      line-height: 1.2;
+      padding-bottom: 0.1rem;
+      color: white;
+}
+#aboutme{
+font-size: 1rem;
+color: white;
+}
+
+/* Education section */
+#Education{
+    padding-top: 20%;
+}
+:root {
+    --primary: #ffffff;
+    --primary-gradient: linear-gradient(45deg, #153c7e00 0%, #00000000 100%);
+}
+.section-header {
+    color: var(--primary);
+    text-align: center;
+}
+#eduHead {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    margin-bottom: 76px;
+}
+.steps {
+    position: relative;
+    margin-top: 32px;
+
+}
+.steps::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: var(--primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+.steps .content p {
+    color: var(--primary);
+    font-size: 0.8rem;
+}
+.contentHead {
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+.steps-container {
+    position: relative;
+    width: calc(50% + 32px);
+}
+.steps-container .content {
+    padding: 32px;
+    border-radius: 20px 20px 20px 20px;
+}
+.steps .steps-container:nth-child(even) {
+    left: calc(50% - 32px);
+    flex-direction: row-reverse;
+}
+.steps-container {
+    display: flex;
+}
+.steps .steps-container .university {
+    font-weight: 1000;
+    font-size: 0.75rem;
+    color:var(--primary-gradienty);
+    margin-bottom: 10px;
+    width: 62px;
+    height: 62px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+    z-index: 777;
+    scale: 2;
+}
+.step-line {
+    width: 50px;
+    height: 4px;
+    margin-top: 31px;
+    flex-shrink: 0;
+}
+@media (max-width: 767px) {
+    .steps::after {
+      left: 32px;
+  }
+    .steps-container {
+      left: 0;
+      flex-direction: row-reverse;
+      width: auto;
+      margin-bottom: 16px;
+  }
+    .steps .steps-container:nth-child(even) {
+      left: 0;
+  }
+}
+
+/* Projects section */
+#Projects{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 40%;
+}
+#projectsection{
+
+    height: 600px;
+}
+#title{
+  color: white;
+  font-size: 1rem;
+}
+#description{
+  color: white;
+  font-size: 0.9rem;
+}
+#codelink{
+    color: white;
+    font-size: 1rem;
+}
+#codelink:hover{
+    background-color: rgb(3, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.embed-responsive{
+    height: 80%;
+}
+@media (max-width: 850px) {
+    #projectsection{
+        height: 400px;
+    }
+    #title{
+        font-size: 0.8rem;
+    }
+    #description{
+        font-size: 0.7rem;
+    }
+    #codelink{
+        font-size: 0.6rem;
+    }
+    .embed-responsive{
+        height: 65%;
+    }
+}
+@media (max-width: 550px) {
+
+    .embed-responsive{
+        height: 45%;
+    }
+}
+/* Skills section */
+#Skills{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding-top: 30%;
+}
+.skill-box{
+       width: 100%;
+       text-align: start;
+}
+.skill-box .skill-bar{
+       height: 12px;
+       width: 100%;
+       border-radius: 20px;
+    background:rgba(37, 34, 23, 0.26);
+}
+.skill-bar .skill-per{
+       position: relative;
+       display: block;
+       height: 100%;
+       width: 100%;
+       border-radius: 6px;
+       opacity: 0;
+    text-align: end;
+}
+#skills .skill-per{
+       animation: all 1.4s ease-in-out forwards;
+       opacity: 0;   
+} 
+@keyframes all {
+       0%{
+           width: 0;
+           opacity: 1;
+     }
+       100%{
+           opacity: 1;
+     }
+}
+
+/* Programs section */
+#programs{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding-top: 30%;
+}
+.programs-box{
+      width: 100%;
+      text-align: start;
+}
+.programs-box .programs-bar{
+      height: 12px;
+      width: 100%;
+      border-radius: 20px;
+      background:rgba(37, 34, 23, 0.26);
+}
+.programs-bar .programs-per{
+      position: relative;
+      display: block;
+      height: 100%;
+      width: 100%;
+      border-radius: 6px;
+      opacity: 0;
+      text-align: end;
+}
+#programs .programs-per{
+      animation: all 1.4s ease-in-out forwards;
+      opacity: 0;   
+} 
+
+
+
+#Methods{
+    padding-top: 30%;
+}
+h1{
+    color: white;
+    margin-bottom: 10%;
+}
+
+.newrow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 8px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .newcolumn {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 8px;
+  }
+  .containerclass {
+    position: relative;
+    width: 100%;
+  }
+  
+
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #81dbf8;
+  }
+  
+  .containerclass:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .newcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .newcolumn {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .newcolumn {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/* Footer section */
+#contact{
+    padding-top: 30%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.fa{
+    padding: 3%;
+}
