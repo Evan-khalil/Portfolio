@@ -402,8 +402,7 @@ color: white;
       opacity: 0;   
 } 
 
-
-
+/* methods section */
 #Methods{
     padding-top: 30%;
 }
@@ -411,88 +410,103 @@ h1{
     color: white;
     margin-bottom: 10%;
 }
-
-.imageclass{
-    border-radius: 10%;
+.ulclass{
+    position:absolute;
+    margin:0;
+    padding:0;
 }
-.newrow {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 8px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .newcolumn {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 8px;
-  }
-  .containerclass {
-    position: relative;
-    width: 100%;
-  }
-  
-
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #ade5f8;
-    border-radius: 10%;
-  }
-  
-  .containerclass:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .newcolumn img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .newcolumn {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+.liclass{
+    text-align:center;
+    display:inline-block;
+    list-style:none;
+    position:relative;
+    border:solid 12px #fff;
+    background:#fff;
+    box-shadow:0 0 15px 0px #555;
+    transition:all 1s ease;
+    -o-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    top:50px;
+}
+.liclass:hover{
+    top:0px;
+    opacity:0.5;
+}
+.liclass:nth-child(1){
+      transform:rotate(10deg);
+}
+.liclass:nth-child(2){
+      transform:rotate(0deg);
+}
+.liclass:nth-child(3){
+      transform:rotate(-10deg);
+}
+.liclass:nth-child(4){
+      transform:rotate(20deg);
+}
+.liclass:nth-child(5){
+    transform:rotate(10deg);
+}
+.liclass:nth-child(6){
+    transform:rotate(-10deg);
+}
+.liclass:nth-child(7){
+    transform:rotate(-3deg);
+}
+.liclass:nth-child(8){
+    transform:rotate(15deg);
+}
+.liclass:nth-child(9){
+    transform:rotate(0deg);
+}
+.liclass:nth-child(10){
+    transform:rotate(-20deg);
+}
+.liclass:nth-child(11){
+    transform:rotate(6deg);
+}
+.pclass{
+    margin:0px 0 0 0;
+}
+@media (max-width: 1200px) {
+    #Methods{
+        padding-bottom: 15rem;
     }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .newcolumn {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+}
+@media (max-width: 941px) {
+    #Methods{
+        padding-bottom: 28rem;
     }
-  }
-
-/* Footer section */
+}
+@media (max-width: 800px) {
+    #Methods{
+        padding-bottom: 38rem;
+    }
+}
+@media (max-width: 721px) {
+    #Methods{
+        padding-bottom: 48rem;
+    }
+}
+@media (max-width: 714px) {
+    #Methods{
+        padding-bottom: 58rem;
+    }
+}
+@media (max-width: 514px) {
+    #Methods{
+        padding-bottom: 68rem;
+    }
+}
+@media (max-width: 485px) {
+    #Methods{
+        padding-bottom: 118rem;
+    }
+}
+/* contact section */
 #contact{
-    padding-top: 30%;
+    padding-top: 60%;
     text-align: center;
     padding-bottom: 5%;
 }
