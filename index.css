@@ -12,6 +12,17 @@ body{
  background-position: center center;
  background-attachment: fixed;
 } 
+@media(max-width: 390px){
+    body{
+        background-image: url('images/curvy-narrow-muddy-road-dark-forest-surrounded-by-greenery-little-light-coming-from.jpg');
+        background-size: cover;
+        height: 100vh;
+        padding:0;
+        margin:0;
+        background-position: center center;
+        background-attachment: fixed;
+       } 
+}
 body::-webkit-scrollbar{
     display: none;
   } 
