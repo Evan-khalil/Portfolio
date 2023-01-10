@@ -13,7 +13,7 @@ section {
 @supports (-webkit-touch-callout: none) {
     body{
         background-image: url('Production.gif');
-        background-attachment: scroll;
+        background-attachment: initial;
     }  
 }
 @supports not (-webkit-touch-callout: none) {
