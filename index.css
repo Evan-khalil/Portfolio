@@ -13,8 +13,10 @@ section {
 @supports (-webkit-touch-callout: none) {
     body{
         background-image: url('Production.gif');
-        background-attachment: initial;
-    }  
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        }  
 }
 @supports not (-webkit-touch-callout: none) {
         body{
