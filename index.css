@@ -3,32 +3,27 @@ html {
     font-family: 'Helvetica', serif; 
 
 }
-
+body{
+    background-image: url('Production.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    background-position: center center;
+    background-attachment: fixed;
+   }
+   @media (max-width: 767px) and (pointer: coarse) {
+    body {
+       background-attachment: scroll;
+    }
+ }
 body::-webkit-scrollbar{
     display: none;
   } 
 section {
      padding: 2rem;
 }  
-@supports (-webkit-touch-callout: none) {
-    body{
-        background-image: url('Production.gif');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center; 
-        }  
-}
-@supports not (-webkit-touch-callout: none) {
-        body{
-            background-image: url('Production.gif');
-            background-size: cover;
-            height: 100vh;
-            padding:0;
-            margin:0;
-            background-position: center center;
-            background-attachment: fixed;
-           }       
-}
+
 .box {
 position:absolute;   
 text-align: center;

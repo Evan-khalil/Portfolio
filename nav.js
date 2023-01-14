@@ -4,3 +4,6 @@ $('a[href*=#]').click(function(event){
     }, 5000);
     event.preventDefault();
 });
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('body').css('background-attachment', 'scroll');
+ }
