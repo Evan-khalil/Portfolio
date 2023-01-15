@@ -25,23 +25,12 @@ body:before {
   }
 section {
      padding: 2rem;
-}  
+} 
 
 .box {
 position:absolute;   
 text-align: center;
 width: 100%
-}
-#nextandprev{
-     animation-name: pulse;
-     animation-duration: 5.5s;
-     animation-iteration-count: infinite;
-     animation-timing-function: ease-out;    
-}
-@keyframes pulse {
-     0%{scale: 0.2;}
-     50%{scale: 0.8;}
-     100%{scale: 0.2;}         
 }
 #Home{
  padding-top: 18%;
