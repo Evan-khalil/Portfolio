@@ -1,13 +1,17 @@
 html {
     scroll-behavior: smooth;
     font-family: 'Helvetica', serif; 
-
 }
 
+/*Body*/
+.box {
+    position:absolute;   
+    text-align: center;
+    width: 100%
+}
 body::-webkit-scrollbar{
     display: none;
-  } 
-  
+}  
 body:before {
     content: "";
     display: block;
@@ -22,16 +26,14 @@ body:before {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
+
+/*Section*/
 section {
      padding: 2rem;
 } 
 
-.box {
-position:absolute;   
-text-align: center;
-width: 100%
-}
+/*Home*/
 #Home{
  padding-top: 18%;
 }
@@ -73,15 +75,6 @@ padding-left: 1rem;
       flex-direction: column;
       padding: 0.1rem 0.1rem 0.1rem 0.1rem;
 }
-.about-img img{
-      width: 274px;
-}
-.about-img{
-      height: 200px;
-      overflow: hidden;
-      border-radius: 90%;
-}
-
 #myname{
       font-size: 1rem;
       margin: rem 0 2.5rem 0;
@@ -115,9 +108,7 @@ color: white;
 .steps {
     position: relative;
     margin-top: 32px;
-
 }
-
 .steps .content p {
     color: var(--primary);
     font-size: 0.8rem;
@@ -209,6 +200,13 @@ color: white;
 .embed-responsive{
     height: 80%;
 }
+@media(max-width: 4351px){
+    #nextandprev{
+        height: 10%;
+        top: 290px;
+        width: 5%;
+    }
+}
 @media(max-width: 1351px){
     #projectsection{
         height: 600px;
@@ -242,6 +240,9 @@ color: white;
     .embed-responsive{
         height: 65%;
     } 
+    #nextandprev{
+        top: 210px;
+    }
 }
 @media (max-width: 900px) {
     #projectsection{
@@ -258,6 +259,11 @@ color: white;
     }
     .embed-responsive{
         height: 60%;
+    }
+    #nextandprev{
+        height: 10%;
+        top: 170px;
+        width: 5%;
     }
 }
 @media (max-width: 720px) {
@@ -276,6 +282,9 @@ color: white;
     .embed-responsive{
         height: 55%;
     }
+    #nextandprev{
+        top: 140px;
+    }
 }
 @media (max-width: 550px) {
     #projectsection{
@@ -293,6 +302,10 @@ color: white;
     .embed-responsive{
         height: 42%;
     }
+    #nextandprev{
+        height: 17%;
+        top: 105px;
+        }
 }
 @media (max-width: 480px) {
     #projectsection{
@@ -309,6 +322,15 @@ color: white;
     }
     .embed-responsive{
         height: 40%;
+    }
+    #nextandprev{
+        height: 9%;
+        top: 110px;
+    }
+}
+@media (max-width: 426px){
+    #nextandprev{
+        top: 116px;
     }
 }
 @media (max-width: 400px) {
@@ -327,7 +349,11 @@ color: white;
     .embed-responsive{
         height: 38%;
     }
+    #nextandprev{
+        top: 106px;
+    }
 }
+
 /* Skills section */
 #Skills{
     color: rgb(255, 255, 255);
@@ -500,6 +526,7 @@ h1{
         padding-bottom: 118rem;
     }
 }
+
 /* contact section */
 #contact{
     padding-top: 60%;
